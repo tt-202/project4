@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Name: Tuyen Tran
+Course: CNT 4714 – Summer 2025 – Project Four
+Assignment title: A Three-Tier Distributed Web-Based Application
+Date: July 31, 2025
+Class: web.xml
+-->
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xmlns="https://jakarta.ee/xml/ns/jakartaee" 
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" 
+         version="5.0">
+
+  <display-name>Project 4 Enterprise Systems | CNT 4714</display-name>
+
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+
+  <servlet>
+    <servlet-name>authenticationServlet</servlet-name>
+    <servlet-class>authenticationServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>authenticationServlet</servlet-name>
+    <url-pattern>/authenticationServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Project4</servlet-name>
+    <servlet-class>Project4</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>Project4</servlet-name>
+    <url-pattern>/Project4</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>rootUserApp</servlet-name>
+    <servlet-class>rootUserApp</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>rootUserApp</servlet-name>
+    <url-pattern>/rootUserApp</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>clientUserApp</servlet-name>
+    <servlet-class>clientUserApp</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>clientUserApp</servlet-name>
+    <url-pattern>/clientUserApp</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>addSupplierRecord</servlet-name>
+    <servlet-class>addSupplierRecord</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>addSupplierRecord</servlet-name>
+    <url-pattern>/addSupplierRecord</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>addPartRecord</servlet-name>
+    <servlet-class>addPartRecord</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>addPartRecord</servlet-name>
+    <url-pattern>/addPartRecord</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>addJobRecord</servlet-name>
+    <servlet-class>addJobRecord</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>addJobRecord</servlet-name>
+    <url-pattern>/addJobRecord</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>addShipmentRecord</servlet-name>
+    <servlet-class>addShipmentRecord</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>addShipmentRecord</servlet-name>
+    <url-pattern>/addShipmentRecord</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>accountantUserApp</servlet-name>
+    <servlet-class>accountantUserApp</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>accountantUserApp</servlet-name>
+    <url-pattern>/accountantUserApp</url-pattern>
+  </servlet-mapping>
+
+</web-app>

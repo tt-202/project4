@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url("images/background.jpg") no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'raleway', sans-serif;
+    color: #f0f0f0;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.6);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, h2, h3, label, p, div, span, a {
+    color: #f0f0f0 !important;
+}
+
+input, textarea, select, button {
+    color: #f0f0f0;
+    background-color: #222c;
+    border: 1px solid #888;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #cccccc;
+}
+
+button {
+    background-color: #277582;
+    border-radius: 20px;
+    color: #f0f0f0;
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+    padding: 8px 18px;
+    margin: 0 10px;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+
+
+a {
+    color: #aee7ff !important;
+    background-color: transparent !important;
+    text-decoration: underline;
+}
+
+.login{
+    width: 500px;
+    overflow: hidden;
+    margin: auto;
+    background: #b3b7b7d9;
+    border-radius: 5px ;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.root{
+    width: 500px;
+    overflow: hidden;
+    margin: auto;
+    background: #d4d2d9d9;
+    border-radius: 5px ;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.client{
+    width: 500px;
+    overflow: hidden;
+    margin: auto;
+    background: #838486d9;
+    border-radius: 5px ;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+h2{
+    text-align: center;
+    color: #e6ebec;
+    margin: 0
+}
+
+label{
+    color:rgb(244, 239, 239);
+    font-size: 40px;
+    font-weight: lighter;
+    padding-left: 8px;
+    text-align: justify;
+}
+
+#username{
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#password{
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+#auth{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 17px;
+    padding-left: 7px;
+    color: rgb(243, 247, 247);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#console{
+    height: 20px;
+    border: none;
+    border-radius: 10px;
+    color: rgb(216, 225, 225);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+span{
+    color:#e2edea;
+    font-size: 17px;
+}
+
+a{
+    float: right;
+    background-color: rgb(235, 246, 247);
+}

@@ -1,0 +1,70 @@
+<!--
+Name: Tuyen Tran
+Course: CNT 4714 – Summer 2025 – Project Four
+Assignment title: A Three-Tier Distributed Web-Based Application Date: July 31, 2025
+Class: main page (index.html)
+    
+-->
+
+
+
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+    <head>
+        <title> / </title>
+        <link rel="stylesheet" type="text/css" href="./style.css"/>
+
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script type = "text/javascript">
+            function eraseText() {
+                // <!-- next line illustrates a straight JavaScript technique
+                // document.getElementById("cmd").innerHTML=" ";
+                // next line illustrates a JQuery technique
+                $("#cmd").html("");
+            }
+        </script>
+        <script type = "text/javascript"> 
+            function eraseData() {
+                // next line illustrates a straight JavaScript technique
+                // document. getElementByID ("data") , innerHTML = .:
+                // next line illustrates a JQuery technique
+                $("#data").remove();
+            }
+        </script>
+        <style>
+  body {
+    background: url("images/background.jpg") no-repeat center center fixed;
+    background-size: cover;
+  }
+</style>
+    </head>
+
+    <body>
+  <div style="text-align: center;">
+    <h1 style="font-size: 2.5em; font-weight: lighter; color: #fff;">
+      Wellcome to the Summer 2025 Project 4 Enterpries System
+    </h1>
+    <h2 style="font-style: italic; font-size: medium;">
+      A Servlet/JSP Based Multi-Tiered Enterprise Application Using A Tomcat Container
+    </h2>
+    <h3 style="font-size: x-large; font-weight: lighter; color: white; text-align: center;">
+      - User Authentication Page -
+    </h3>
+    <br>
+    <form action="authenticationServlet" method="get" style="margin-top: 30px; display: inline-block; text-align: center;">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+      <br><br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <br><br>
+      <button type="submit">Authenticate</button>
+    </form>
+  </div>
+</body>
+
+    </body>
+</html>
