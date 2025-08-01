@@ -18,9 +18,9 @@ create table usercredentials (
 );
 
 #NOTE: you will need to change your root user password value
-insert into usercredentials values ("root", "rootMAC1$");
-insert into usercredentials values ("client", "client");
-insert into usercredentials values ("theaccountant", "theaccountant");
+insert into usercredentials values ("root", "adminpass");
+insert into usercredentials values ("client", "clientpass");
+insert into usercredentials values ("theaccountant", "accountantpass");
 
 #uncomment the following line if you want to see the results of creating  database
 select * from usercredentials;

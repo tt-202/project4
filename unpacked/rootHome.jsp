@@ -77,7 +77,7 @@ Class: rootHome.jsp
       </div>
     
       <div class="overlay">
-        <form action="/Project4/clientUserApp" method="post" style="margin-top: 5px; text-align: center;">
+        <form action="/clientUserApp" method="post" style="margin-top: 5px; text-align: center;">
           <div style="color: white;">
             <p style="font-style: italic; font-size: medium;">You are connected to the Project 4 Enterprise System Database as a root-level user.</p>
             <b>Please enter any SQL query or update command in the box below.</b>

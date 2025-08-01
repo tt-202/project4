@@ -43,7 +43,7 @@ Class: accountantHome.jsp
     <h1 style="font-size: 2.5em; font-weight: lighter; color: #fff;">Wellcome to the Summer 2025 Project 4 Enterpries System</h1>
     <h2 style="font-style: italic; font-size: medium; color: #fff;">A Servlet/JSP Based Multi-Tiered Enterprise Application</h2>
     <h3 style="color: #fff;">You are connected to the Accountant Home Page</h3>
-    <form action="/Project4/accountantUserApp" method="post" style="margin-top: 15px; text-align: center;">
+    <form action="/accountantUserApp" method="post" style="margin-top: 15px; text-align: center;">
       <div style="color: white;">
         <p style="font-style: italic; font-size: medium;">Please select one of the following queries to execute:</p>
         <div style="text-align: left; color: white;">
