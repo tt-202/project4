@@ -1,0 +1,1 @@
+mysql -h aws.connect.psdb.cloud -D credentialsdb -u 4qjbtst6rkiuztt8qs9o -ppscale_pw_WIICHVb2NCQqkXE4ThmX16ib5VPapw0DJi8iwHA8fqK --ssl-mode=VERIFY_IDENTITY --ssl-ca=/etc/ssl/cert.pem
