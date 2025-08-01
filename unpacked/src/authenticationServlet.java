@@ -56,16 +56,16 @@ public class authenticationServlet extends HttpServlet {
 
         if (userCredentialsOK) {
             if ("root".equals(inBoundUsername)) {
-                response.sendRedirect("/Project4/rootHome.jsp");
+                response.sendRedirect("/rootHome.jsp");
             } else if ("client".equals(inBoundUsername)) {
-                response.sendRedirect("/Project4/clientHome.jsp");
+                response.sendRedirect("/clientHome.jsp");
             } else if ("theaccountant".equals(inBoundUsername)) {
-                response.sendRedirect("/Project4/accountantHome.jsp");
+                response.sendRedirect("/accountantHome.jsp");
             } else {
-                response.sendRedirect("/Project4/rootHome.jsp"); // default fallback
+                response.sendRedirect("/rootHome.jsp"); // default fallback
             }
         } else {
-            response.sendRedirect("/Project4/errorpage.html");
+            response.sendRedirect("/errorpage.html");
         }
     }
 }

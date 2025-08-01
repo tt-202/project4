@@ -1,1 +1,14 @@
 mysql -h aws.connect.psdb.cloud -D credentialsdb -u 4qjbtst6rkiuztt8qs9o -ppscale_pw_WIICHVb2NCQqkXE4ThmX16ib5VPapw0DJi8iwHA8fqK --ssl-mode=VERIFY_IDENTITY --ssl-ca=/etc/ssl/cert.pem
+
+//delete all .class:
+find unpacked/WEB-INF/classes -name "*.class" -delete
+
+// recomplied:
+-cp "/usr/local/apache-tomcat-11.0.9/lib/servlet-api.jar" -d unpacked/WEB-INF/classes unpacked/src/*.java
+
+// project4.war
+jar -cvf project4.war -C unpacked/ .
+
+//coppy the project4 in tomcat
+cp -r unpacked /usr/local/apache-tomcat-11.0.9/webapps/Project4
+

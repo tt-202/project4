@@ -36,7 +36,12 @@ public class clientUserApp extends HttpServlet {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
 
-            database_Connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/project4", "root", "mysql");
+            String url = System.getenv("DB_URL");
+            String user = System.getenv("DB_USER");
+            String password = System.getenv("DB_PASSWORD");
+            
+            database_Connection = DriverManager.getConnection(url, user, password);
+           // database_Connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/project4", "root", "mysql");
             database_statement = database_Connection.createStatement();
         } //end try
 
