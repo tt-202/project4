@@ -52,30 +52,27 @@ public class clientUserApp extends HttpServlet {
     }//end initialize
 
     protected void doGet( HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String input = request.getParameter("textBox");
+       String input = request.getParameter("textBox");
         String result = null;
-        
-        if(input.toLowerCase().contains("select")) {
-        	 try {
-                 result = do_select(input);
-             } //end try
 
-             catch(SQLException e) {
-                 result = "<span>" + e.getMessage() + "</span>";
-                 e.printStackTrace();
-             } //end catch
-        } //end if
-
-        else {
+        if (input != null && input.toLowerCase().contains("select")) {
             try {
-                result = do_update(input);
-            } //end try 
-
-            catch(SQLException e) {
+                result = do_select(input);
+            } catch(SQLException e) {
                 result = "<span>" + e.getMessage() + "</span>";
                 e.printStackTrace();
-            } //end catch
-        } //end else
+            }
+        } else if (input != null) {
+            try {
+                result = do_update(input);
+            } catch(SQLException e) {
+                result = "<span>" + e.getMessage() + "</span>";
+                e.printStackTrace();
+            }
+        } else {
+            result = "<span>Error: No input provided.</span>";
+        }
+
 
         HttpSession ses = request.getSession();
         ses.setAttribute("result", result);
